@@ -8,15 +8,17 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="images/logo.png">
     <title>TREE YACHT</title>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
     <!-- Custom styles for this template -->
     <link href="css/owl.carousel.css" rel="stylesheet">
     <link href="css/owl.theme.default.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="js/ie-emulation-modes-warning.js"></script>
@@ -28,7 +30,14 @@
 </head>
 
 <body id="page-top">
-
+    <div id="cursor">
+        <div class="cursor-pt"></div>
+        <div class="cursor-plus">
+            <div class="cursor-plus-bg"></div>
+            <div class="cursor-plus-cross"></div>
+        </div>
+        <div class="cursor-loader"></div>
+    </div>
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -149,11 +158,15 @@
         <!-- /.container -->
     </section>
     </br>
-    <section id="portfolio" class="light-bg" style="background-image:url('images/service-bg.png')">
+
+    <section id="portfolio" class="light-bg videobgg">
         <div class="container">
+            <video class="videok" muted autoplay loop playsinline>
+            <source type="video/mp4" src="images/video2.mp4">
+               
+          </video>
 
-
-            <div class="row">
+            <div class="row overlay">
                 <div class="col-lg-12 text-center">
                     <div class="section-title">
                         <h2>Services</h2>
@@ -161,6 +174,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="row">
                 <!-- start portfolio item -->
                 <div class="col-md-4">
@@ -370,9 +384,9 @@
     <script src="js/contact_me.js"></script>
     <script src="js/cbpAnimatedHeader.js"></script>
     <script src="js/theme-scripts.js"></script>
-
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+
 </body>
 
 </html>
